@@ -1,6 +1,6 @@
 $(function () {
   $.ajax({
-    url: "./json/delivery.json",
+    url: "./json/iconbox.json",
     dataType: "json",
     success: function (data) {
       if (data.length > 0) {
