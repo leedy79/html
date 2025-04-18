@@ -1,13 +1,11 @@
 @charset "utf-8";
 
 #sub {
-  /* background-color: rgb(224, 224, 224); */
   width: 100%;
   height: auto;
 }
 
 #subMenu {
-  /* background-color: yellow; */
   width: 1280px;
   height: 48px;
   margin: 0 auto;
@@ -39,17 +37,14 @@
 .brand_name {
   font-size: 14px;
   font-weight: bold;
-  /* float: left; */
   padding: 8px;
 }
 .store_badge {
   font-size: 13px;
-  /* float: left; */
   padding: 8px;
 }
 .store_disc {
   font-size: 13px;
-  /* float:left; */
   padding: 8px;
   color: #ff5452;
 }
@@ -71,52 +66,44 @@
   height: 102px;
 }
 #contents {
-  /* background-color: rgb(60, 255, 0); */
   width: 1280px;
   margin: 0 auto;
 }
 #buyInfo {
-  /* background-color: rgb(60, 255, 0); */
   width: 1280px;
   height: 1022px;
   margin: 0 auto;
   margin: 0 0 120px 0;
 }
 #product {
-  /* background-color: rgb(0, 217, 255); */
   width: 660px;
   height: 736px;
   float: left;
 }
 #product > .mainImg {
-  /* background-color: rgb(25, 0, 255); */
   width: 550px;
   height: 550px;
 }
-.subImgBox{
+.subImgBox {
   width: 90px;
   height: 550px;
   float: right;
 }
 .subImg {
-  /* background-color: rgb(255, 187, 0); */
   width: 90px;
   height: 90px;
   margin-bottom: 14px;
-  /* border: 1px solid black; */
   float: right;
 }
 .subImg:hover {
   border: 1px solid black;
 }
 #context {
-  /* background-color: rgb(255, 0, 170); */
   width: 560px;
   height: 550px;
   float: right;
 }
 #context .line1 {
-  /* background-color: rgb(0, 255, 255); */
   width: 560px;
   height: 36px;
 }
@@ -146,23 +133,20 @@
 h2 {
   width: 560px;
   height: 100px;
-  /* margin: 0 0 4px 0; */
-  /* font-size: 12px; */
   font-weight: bold;
-  /* color: #777; */
 }
 h2 .store {
-    width: 530px;
-    display: inline-block;
+  width: 530px;
+  display: inline-block;
 }
-.store > span > .arrow_ilnk{
+.store > span > .arrow_ilnk {
   width: 20px;
   height: 20px;
 }
 h2 .store > p {
   margin-top: 10px;
 }
-h2 .share_ilnk{
+h2 .share_ilnk {
   width: 20px;
   height: 20px;
   float: right;
@@ -188,18 +172,11 @@ h2 .share_ilnk{
 #context .line4 .rating {
   font-size: 20px;
   font-weight: bold;
-  /* color: #777; */
 }
 #context .line4 .text {
   font-size: 17px;
-  /* color: #777; */
 }
-/* #context .line5 {
-  width: 560px;
-  height: 29px;
-  font-size: 22px;
-  color: black;
-} */
+
 #context .price {
   width: 560px;
   height: 60px;
@@ -242,7 +219,7 @@ h2 .share_ilnk{
   width: 560px;
   height: 333px;
 }
-.purchase_info ul{
+.purchase_info ul {
   margin: 10px 0;
   padding: 10px 0;
   font-size: 14px;
@@ -252,12 +229,12 @@ h2 .share_ilnk{
   height: 42px;
   float: left;
 }
-.card_benefit{
+.card_benefit {
   width: 560px;
   height: 40px;
   border-top: 1px solid #e5e5e5;
 }
-.card_benefit .arrowDown{
+.card_benefit .arrowDown {
   width: 17px;
   height: 17px;
 }
@@ -274,7 +251,7 @@ h2 .share_ilnk{
   font-weight: bold;
 }
 .delivery_info {
-  border-top:1px solid #e5e5e5;  
+  border-top: 1px solid #e5e5e5;
 }
 .point {
   width: 560px;
@@ -320,23 +297,15 @@ h2 .share_ilnk{
   background-color: #f8f8f8;
 }
 .orderSection {
-  /* display: flex; */
   align-items: center;
-  /* gap: 20px; */
 }
 .orderSectionBox p {
   font-size: 14px;
 }
 
 .orderCounter {
-  /* width: 100px; */
-  /* height: 30px; */
   margin-top: 20px;
   display: inline-block;
-  /* display: flex; */
-  /* border: 1px solid #ccc; */
-  /* border-radius: 4px; */
-  /* overflow: hidden; */
 }
 
 .orderCounter .cntBox {
@@ -346,7 +315,6 @@ h2 .share_ilnk{
   height: 30px;
   font-size: 20px;
   float: left;
-  /* cursor: pointer; */
 }
 
 .orderCounter input {
@@ -359,18 +327,11 @@ h2 .share_ilnk{
   float: left;
 }
 
-/* input[type=number]의 증감 버튼 숨기기 */
-/* input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-} */
 .orderSection .orderPrice {
   font-size: 20px;
   font-weight: bold;
   float: right;
   margin-top: 20px;
-  /* text-align: right; */
 }
 #context .buyPriceBox {
   width: 560px;
@@ -380,7 +341,6 @@ input::-webkit-inner-spin-button {
 #context .buyPrice {
   width: 200px;
   float: right;
-  /* align-items: right; */
 }
 #context .buyPrice .total {
   font-size: 18px;
@@ -450,13 +410,11 @@ input::-webkit-inner-spin-button {
 .caution {
   width: 560px;
   height: 40px;
-  /* border-top: 1px solid #e5e5e5; */
 }
 
 .card_benefit .arrowDown {
   width: 17px;
   height: 17px;
-  /* border-top: 1px solid #e5e5e5; */
 }
 
 .bulk_purchase .click {
@@ -468,18 +426,13 @@ input::-webkit-inner-spin-button {
   width: 1280px;
   height: 454px;
   margin: 0px auto;
-  /* background-color: gold; */
-  /* float: left; */
 }
 #adProduct .title {
   width: 1280px;
   height: 22px;
-  /* background-color: gray; */
-  /* float: left; */
 }
 #adProduct .disc {
   font-size: 14px;
-  /* line-height: 50px; */
   font-weight: bold;
   margin: 15px 0 0 0px;
 }
@@ -494,7 +447,6 @@ input::-webkit-inner-spin-button {
 #adProduct .rating {
   font-size: 12px;
   color: #727272;
-  /* line-height: 50px; */
 }
 
 #adProduct .box {
@@ -502,12 +454,7 @@ input::-webkit-inner-spin-button {
   height: 398px;
   float: left;
   margin: 0 24px 0 0px;
-  /* background-color: tomato; */
 }
-
-/* #sale_product > .box:hover {
-    box-shadow: 4px 4px 4px #ddd;
-  } */
 
 #adProduct .box .img_box {
   width: 100%;
@@ -524,7 +471,7 @@ input::-webkit-inner-spin-button {
 #productInfo {
   width: 1280px;
   margin-top: 50px;
-  display: flex
+  display: flex;
 }
 #leftBox {
   width: 930px;
@@ -554,7 +501,7 @@ input::-webkit-inner-spin-button {
 #leftBox table tr {
   height: 53px;
   text-align: left;
-  padding:15px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #ccc;
 }
 #leftBox .exchange_info {
@@ -565,7 +512,7 @@ input::-webkit-inner-spin-button {
 #leftBox .report {
   height: 45px;
   margin-top: 40px;
-  background-color:  #ccc;
+  background-color: #ccc;
   font-size: 14px;
   padding: 15px 0;
 }
@@ -601,7 +548,7 @@ input::-webkit-inner-spin-button {
   margin: 20px 0 20px;
 }
 
-.tabBar{
+.tabBar {
   width: 100%;
   height: 54px;
   border-bottom: 1px solid #777;
@@ -649,7 +596,6 @@ input::-webkit-inner-spin-button {
 #productDetail img {
   width: 100%;
   margin: 60px 0;
-
 }
 #aside {
   width: 300px;
@@ -657,7 +603,7 @@ input::-webkit-inner-spin-button {
   float: right;
   margin-left: 50px;
   position: sticky;
-  top:0;
+  top: 0;
 }
 .boxTop {
   width: 100%;
@@ -675,7 +621,7 @@ input::-webkit-inner-spin-button {
   margin: 0 0 20px 0;
   padding: 20px 0 0 0;
 }
-.boxBottom .totalPrice{
+.boxBottom .totalPrice {
   width: 200px;
   float: right;
 }
@@ -723,7 +669,7 @@ input::-webkit-inner-spin-button {
 
 .boxBottom .btnLine2 > span {
   font-size: 16px;
-  margin-left: 10px; 
+  margin-left: 10px;
 }
 
 .boxBottom .buyNow {
@@ -736,8 +682,3 @@ input::-webkit-inner-spin-button {
   float: right;
   padding: 8px 20px;
 }
-
-
-
-
-
