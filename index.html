@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>원하는 상품을 원하는 시간에 쓱, 이마트몰</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+  <script src="js/iconbox.js"></script>
+  <script src="js/navi_cat.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/delivery.js"></script>
+  <script src="js/product.js"></script>
+  <script src="js/slider_action.js"></script>
+  <!-- <script>
+    var i = 0;
+    function slide() {
+      i++;
+      if (i > $('.slide li:last').index()) {
+        i = 0;
+      }
+      $('.slide li').eq(i).stop().fadeIn('slow');
+      $('.slide li').eq(i - 1).stop().fadeOut();
+    }
+    setInterval(slide, 3000);
+  </script> -->
+
+</head>
+
+<body>
+  <header>
+    <div id="first_box">
+      <a href="index.html">
+        <img src="img/ssg_logo.png" alt="ssg_logo">
+      </a>
+      <ul>
+        <li class="addDivider"><a href="sub.html">이마트몰</a></li>
+        <li class="addDivider"><a href="sub.html">신세계몰</a></li>
+        <li><a href="#">신세계백화점</a></li>
+      </ul>
+      <!-- <div class="iconbox">
+        <a href="sub.html"><img class="icon" src="img/search.webp" alt="icon1" /></a>
+        <a href="sub.html"><img class="icon" src="img/heart.webp" alt="icon2" /></a>
+        <a href="sub.html"><img class="icon" src="img/user.webp" alt="icon3" /></a>
+        <a href="sub.html"><img class="icon" src="img/cart.webp" alt="icon4" /></a>
+        <a href="sub.html"><img class="icon" src="img/headphone.webp" alt="icon5" /></a>
+      </div> -->
+      <div class="iconbox"></div>
+    </div>
+
+    <div id="search">
+      <div class="search_box">
+        <div class="search_logo">
+          <img src="img/logo.png" alt="logo" />
+        </div>
+        <form>
+          <fieldset id="search">
+            <input type="text" name="search" />
+            <button type="submit" class="search_btn">
+              <img src="img/search.webp" alt="" />
+            </button>
+          </fieldset>
+        </form>
+        <fieldset id="delivery">
+          <div>
+            <span>로그인 후 쓱-배송시간을 확인해보세요</span>
+            <button>
+              <img src="img/next.webp" alt="" />
+            </button>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    <nav>
+      <div id="catagory">
+        <div class="cata_btn">
+          <img src="img/menu.png" alt="" />
+          <p><a href="sub.html">전체 카테고리</a></p>
+        </div>
+        <!-- <ul class="navi_cat">
+          <li><a href="sub.html">자주구매</a></li>
+          <li><a href="sub.html">세일중</a></li>
+          <li><a href="sub.html">오반장</a></li>
+          <li><a href="sub.html">베스트</a></li>
+          <li><a href="sub.html">신상품</a></li>
+          <li><a href="sub.html">미식관</a></li>
+          <li><a href="sub.html">이벤트</a></li>
+
+          <a href="sub.html">
+            <div class="brandStore">
+              <p>브랜드관</p>
+              <img src="img/next.webp" alt="down">
+            </div>
+          </a>
+          <a href="sub.html">
+            <div class="deliveryStore">
+              <p>배송매장</p>
+              <img src="img/next.webp" alt="down">
+            </div>
+          </a>
+        </ul> -->
+        <ul class="navi_cat"></ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- <div class="slider-container">
+    <ul class="slider-list">
+      <li class="slider-item" data-index="0"><a href="sub.html"><img src="img/trans0.avif" alt="1번 슬라이드"></a></li>
+    </ul>
+  </div> -->
+  <div class="slider-container">
+    <ul class="slider-list"></ul>
+  </div>
+  <div class="slider-controls">
+    <button onclick="prev()">◀</button>
+    <span id="slide-counter">1 / 5</span>
+    <button id="toggle-play">⏸</button>
+    <button onclick="next()">▶</button>
+  </div>
+
+  <!-- <div id="slider">
+    <ul class="sliderBox">
+      <li>
+        <a href="sub.html">
+          <img src="img/trans0.avif" alt="" />
+        </a>
+      </li>
+    </ul>
+    <ul class="sliderBox"></ul>
+    <div class="slider_control">
+      <div class="control_box">
+        <button class="slider_btn prev">
+          <img src="img/left.webp" alt="" />
+        </button>
+        <span>1/12</span>
+        <button class="slider_btn next">
+          <img src="img/right.webp" alt="" />
+        </button>
+        <button class="slider_btn pause">
+          <img src="img/Pause.webp" alt="" />
+        </button>
+      </div>
+    </div>
+  </div> -->
+
+  <section id="delivery_store">
+    <div class="title">
+      <h2>배송서비스별 매장 바로가기</h2>
+    </div>
+    <div class="store">
+      <!-- <div class="delivery_group">
+        <div class="delivery_box">
+          <a href="sub.html">
+            <img src="img/img_ssg1.avif" alt="" />
+            <p>쓱 주간배송 ><Br>원하는 걸 원하는 시간에</p>
+          </a>
+        </div>
+        <div class="delivery_box">
+          <a href="sub.html">
+            <img src="img/img_ssg2.avif" alt="" />
+            <p>쓱 새벽배송 ><br>6시 까지, 신선한 식탁</p>
+          </a>
+        </div>
+        <div class="delivery_box">
+          <a href="sub.html">
+            <img src="img/img_star.webp" alt="" />
+            <p>스타배송 ><br>약속한 날짜에 정확하게</p>
+          </a>
+        </div>
+        <div class="delivery_box">
+          <a href="sub.html">
+            <img src="img/img_traders.avif" alt="" />
+            <p>쓱 트레이더스 배송 ><br>대용량 상품도 쓱-</p>
+          </a>
+        </div>
+      </div> -->
+      <div class="delivery_group"></div>
+    </div>
+  </section>
+  <section id="coupon">
+    <a href="sub.html">
+      <div class="coupon_box">
+        <img src="img/coupon.jpg" alt="" />
+        <p>지금 SSG.COM Biz. 가입하고, 혜택 받으세요!<br>가입 즉시 10% 할인 쿠폰과 매월 6종 쿠폰 자동 지급까지</p>
+        <div class="coupon_box_out"></div>
+      </div>
+    </a>
+  </section>
+  <div id="products">
+    <div>
+      <div class="title">
+        <h2>지금 세일 중인 상품이에요</h2>
+      </div>
+      <div class="sale_catagory">
+        <ul>
+          <li class="obanjang"><a href="#">오반장</a></li>
+          <li><a href="sub.html">1+1</a></li>
+          <li><a href="sub.html">마감세일</a></li>
+          <li><a href="sub.html">이마트 전단행사</a></li>
+          <li><a href="sub.html">트레이더스 점포행사</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="saleProducts">
+      <div class="box">
+        <a href="sub.html">
+          <img src="img/p_1.avif" alt="p_img_1" />
+        </a>
+        <span class="desc"><a href="#">[지금이야] 24K 순금 999.9 포나인 금테크 골드바 3.75g</a></span>
+        <span class="price">654,674원</span>
+        <span class="rating">★4.8(65,263)</span>
+      </div>
+
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_2.avif" alt="p_img_2" /></a>
+        </div>
+        <span class="desc"><a href="#">1+1 네이처메이드/네이처밤부/맥스드라이/매직컴포트 기저귀</a></span>
+        <span class="price">41,300원</span>
+        <span class="rating">★4.8(2,144)</span>
+      </div>
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_3.avif" alt="p_img_3" /></a>
+        </div>
+        <span class="desc"><a href="#">팬틴 인기상품 최대 50% 할인중!</a></span>
+        <span class="price">18,900원</span>
+        <span class="rating">★4.8(668)</span>
+      </div>
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_4.avif" alt="p_img_4" /></a>
+        </div>
+        <span class="desc"><a href="#">I`mperfect 감자 (1kg)</a></span>
+        <span class="price">4,392원</span>
+        <span class="rating">★4.7(28,445)</span>
+      </div>
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_5.avif" alt="p_img_5" /></a>
+        </div>
+        <span class="desc"><a href="#">코디 화장지,미용티슈,물티슈 ~1+1</a></span>
+        <span class="price">4,900원</span>
+        <span class="rating">★4.8(166,169)</span>
+      </div>
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_6.avif" alt="p_img_6" /></a>
+        </div>
+        <span class="desc"><a href="#">오랄비, 히말라야, 2080 ~1+1</a></span>
+        <span class="price">2,490원</span>
+        <span class="rating">★4.8(130,270)</span>
+      </div>
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_7.avif" alt="p_img_7" /></a>
+        </div>
+        <span class="desc"><a href="#">탄산음료 특가</a></span>
+        <span class="price">5,480원</span>
+        <span class="rating">★4.9(304,720)</span>
+      </div>
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_8.webp" alt="p_img_8" /></a>
+        </div>
+        <span class="desc"><a href="#">1등급 이상의 숙성한돈 암퇘지 생오겹살 구이용 500g 미박삼겹살 껍데기삼겹살</a></span>
+        <span class="price">9,900원</span>
+        <span class="rating">★5.0(1)</span>
+      </div>
+    </div> -->
+    <div class="saleProducts"></div>
+    <div class="more_btn_box">
+      <a href="sub.html">
+        <button class="more_btn">오반장 전체보기 ></button>
+      </a>
+    </div>
+
+    <div class="title">
+      <h2>계속 사게 되는 재구매 베스트 상품</h2>
+    </div>
+    <!-- <div class="rebuyingProducts">
+      <div class="box">
+        <a href="sub.html">
+          <img src="img/p_9.avif" alt="p_img_9" />
+        </a>
+        <span class="desc"><a href="#">노브랜드 굿모닝 굿밀크 1L</a></span>
+        <span class="price">1,890원</span>
+        <span class="rating">★4.8(238,320)</span>
+      </div>
+
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_10.avif" alt="p_img_10" /></a>
+        </div>
+        <span class="desc"><a href="#">노브랜드 국산콩두부300g*2입</a></span>
+        <span class="price">3,480원</span>
+        <span class="rating">★4.8(313,453)</span>
+      </div>
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_11.avif" alt="p_img_11" /></a>
+        </div>
+        <span class="desc"><a href="#">제주삼다수 그린 2L 6병</a></span>
+        <span class="price">6,480원</span>
+        <span class="rating">★4.8(139,335)</span>
+      </div>
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_12.avif" alt="p_img_12" /></a>
+        </div>
+        <span class="desc"><a href="#">노브랜드 미네랄워터 2L*6</a></span>
+        <span class="price">1,980원</span>
+        <span class="rating">★4.8(331,571)</span>
+      </div>
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_13.webp" alt="p_img_13" /></a>
+        </div>
+        <span class="desc"><a href="#">[CJ] 햇반 (210g*12입)</a></span>
+        <span class="price">13,480원</span>
+        <span class="rating">★4.9(145,389)</span>
+      </div>
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_14.avif" alt="p_img_14" /></a>
+        </div>
+        <span class="desc"><a href="#">[피코크]고수의 맛집 금돼지식당 김치찌개 500g</a></span>
+        <span class="price">4,784원</span>
+        <span class="rating">★4.8(5,942)</span>
+      </div>
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_15.avif" alt="p_img_15" /></a>
+        </div>
+        <span class="desc"><a href="#">밥이보약 CAT 걱정없는 헤어볼 2kg</a></span>
+        <span class="price">27,800원</span>
+        <span class="rating">★4.8(329)</span>
+      </div>
+      <div class="box">
+        <div class="img_box">
+          <a href="sub.html">
+            <img src="img/p_16.avif" alt="p_img_16" /></a>
+        </div>
+        <span class="desc"><a href="#">다막 바클라바 화이트 스퀘어 60g</a></span>
+        <span class="price">3,480원</span>
+        <span class="rating">★4.7(988)</span>
+      </div>
+    </div> -->
+    <div class="rebuyingProducts"></div>
+    <div class="more_btn_box">
+      <a href="sub.html">
+        <button class="more_btn">재구매 베스트 상품 전체보기 ></button>
+      </a>
+    </div>
+  </div>
+  <div class="notice_box">
+    <div class="notice">
+      <ul>
+        <li><a href="sub.html">공지사항</a></li>
+        <li class="divider">|</li>
+        <li><a href="sub.html">이마트 점포안내</a></li>
+        <li class="divider">|</li>
+        <li><a href="sub.html">트레이더스 점포안내</a></li>
+        <li class="divider">|</li>
+        <li><a href="sub.html">신세계포인트</a></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="supportBox">
+      <div class="support">
+        <ul>
+          <li><a href="sub.html">회사소개</a></li>
+          <li class="divider">|</li>
+          <li><a href="sub.html">개인정보처리방침</a></li>
+          <li class="divider">|</li>
+          <li><a href="sub.html">이용약관</a></li>
+          <li class="divider">|</li>
+          <li><a href="sub.html">청소년 보호방침</a></li>
+          <li class="divider">|</li>
+          <li><a href="sub.html">지식재산권센터</a></li>
+          <li class="divider">|</li>
+          <li><a href="sub.html">입점상담</a></li>
+          <li class="divider">|</li>
+          <li><a href="sub.html">이마트점포 입점상담</a></li>
+          <li class="divider">|</li>
+          <li><a href="sub.html">광고신청</a></li>
+        </ul>
+        <select>
+          <option>신세계그룹</option>
+          <option>신세계포인트</option>
+          <option>신세계백화점</option>
+          <option>이마트</option>
+          <option>이마트 트레이더스</option>
+          <option>이마트 에브리데이</option>
+          <option>이마트24</option>
+          <option>신세계TV 쇼핑</option>
+          <option>프리미엄 아웃렛</option>
+          <option>스타필드</option>
+        </select>
+      </div>
+    </div>
+    <div class="footer_box">
+      <span>(주) 에스에스지닷컴</span>
+      <div>
+        <img src="img/headphone.webp" alt="">
+        <span class="contact">1577-3419</span>
+        <button type="submit">전화문의 전 클릭</button>
+        <button type="submit">1:1 고객센터톡</button>
+        <span>고객센터/전자금융거래분쟁처리</span>
+        <p>대표자: 최훈학 서울특별시 영등포구 영신로34길 30 사업자등록번호: 870-88-01143 통신판매업 신고번호: 제2025-서울영등포-0509호</p>
+        <p>개인정보보호책임자: 김우진 Fax: 02-2068-7118 ssg@ssg.com</p>
+        <button type="submit">사업자 정보확인</button>
+        <button type="submit">소비자 분쟁해결 기준</button>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

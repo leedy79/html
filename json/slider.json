@@ -1,0 +1,32 @@
+[
+  {
+    "class": "slider-item",
+    "href": "sub.html",
+    "src": "img/trans0.avif",
+    "alt": "slider1"
+  },
+  {
+    "class": "slider-item",
+    "href": "sub.html",
+    "src": "img/trans1.avif",
+    "alt": "slider2"
+  },
+  {
+    "class": "slider-item",
+    "href": "sub.html",
+    "src": "img/trans2.avif",
+    "alt": "slider3"
+  },
+  {
+    "class": "slider-item",
+    "href": "sub.html",
+    "src": "img/trans3.avif",
+    "alt": "slider4"
+  },
+  {
+    "class": "slider-item",
+    "href": "sub.html",
+    "src": "img/trans4.avif",
+    "alt": "slider5"
+  }
+]

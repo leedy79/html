@@ -1,0 +1,30 @@
+[
+  {
+    "href": "sub.html",
+    "class": "delivery_box",
+    "content": "쓱 주간배송 ><Br>원하는 걸 원하는 시간에",
+    "src": "img/img_ssg1.avif",
+    "alt": "img_ssg1"
+  },
+  {
+    "href": "sub.html",
+    "class": "delivery_box",
+    "content": "쓱 새벽배송 ><br>6시 까지, 신선한 식탁",
+    "src": "img/img_ssg2.avif",
+    "alt": "img_ssg2"
+  },
+  {
+    "href": "sub.html",
+    "class": "delivery_box",
+    "content": "스타배송 ><br>약속한 날짜에 정확하게",
+    "src": "img/img_star.webp",
+    "alt": "img_ssg3"
+  },
+  {
+    "href": "sub.html",
+    "class": "delivery_box",
+    "content": "쓱 트레이더스 배송 ><br>대용량 상품도 쓱-",
+    "src": "img/img_traders.avif",
+    "alt": "img_ssg4"
+  }
+]
