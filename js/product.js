@@ -1,6 +1,5 @@
 $(function () {
   $.ajax({
-    // url: "http://kkms4001.iptime.org/~ysb/304/04/html/json/product.json",
     url: "./json/delivery.json",
     dataType: "json",
     success: function (data) {
